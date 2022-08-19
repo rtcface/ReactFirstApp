@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';    
-import { GifGrid,AddCategory }  from './compounents';
+import { GifGrid,AddCategory }  from './components';
 
 interface SearchGif{
   categories: Array<string>

@@ -11,7 +11,7 @@ export interface AddCategoryProps{
 
 
 export function AddCategory({ onNewCategories }:AddCategoryProps) {
-
+try {
   const [inputValue, setInputValue] = useState<AddCategory["categoryName"]>('');
 
 const onChangeCat = ({target}:React.ChangeEvent<HTMLInputElement>) => {
@@ -41,4 +41,7 @@ const onSubmitCat = ( event:React.FormEvent<HTMLFormElement> ) => {
         />
       </form>
   );
+} catch (error) {
+  return (<><h3>Se presento un error</h3></>)
+}
 }

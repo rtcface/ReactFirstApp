@@ -1,6 +1,8 @@
 module.exports = {
     testEnvironment: 'jest-environment-jsdom',
-    setupFiles: ['./jest.setup.ts']
+    setupFiles: ['./jest.setup.ts'],
+      // Module file extensions for importing
+    moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"]
 }
 
 // module.exports = {

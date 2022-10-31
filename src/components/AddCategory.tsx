@@ -25,14 +25,14 @@ const onSubmitCat = ( event:React.FormEvent<HTMLFormElement> ) => {
   
   if( inputValue.trim().length <= 3 ) return;
 
-  onNewCategories( inputValue.trim()  );
+   onNewCategories( inputValue.trim()  );
 
   setInputValue('');
 
 };
 
   return (
-      <form onSubmit={ onSubmitCat }>
+      <form onSubmit={ onSubmitCat } aria-label="form">
         <input 
           type='text' 
           placeholder='Escribe la categoria'

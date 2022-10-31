@@ -13,7 +13,7 @@ describe("test of camponent GiftItem", () => {
 
   test("should to match with the snapshot", () => {
     const { container } = render(<GifItem {...defaultProps} />);
-    expect(container).toMatchSnapshot();
+    expect(container).toMatchSnapshot(); 
   });
 
   test("should show the image with url and the alt indicate", () => {
